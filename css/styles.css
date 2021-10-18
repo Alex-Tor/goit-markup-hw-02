@@ -10,9 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-.hero-footer {
-  background-color: var(--fhone-color);
-}
+
 .mail-tel {
   font-style: normal;
   font-weight: 500;
@@ -31,7 +29,6 @@ body {
   font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.02em;
-
   color: var(--primery-text-color);
 }
 .menu-link:hover,
@@ -70,10 +67,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--header-color);
 }
 
@@ -109,24 +103,20 @@ body {
   color: var(--header-color);
 }
 .desc-menu {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
 }
 .desc {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  color: #757575;
+  color: var(--mail-tel-color);
 }
 .title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -136,7 +126,6 @@ body {
   color: var(--primery-text-color);
 }
 .people {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -156,7 +145,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--mail-tel-color);
 }
-/*-- Portfolio -- */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -191,14 +179,10 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
-
   letter-spacing: 0.06em;
-
   color: var(--primery-text-color);
 }
 .desc-desc {
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -215,8 +199,16 @@ body {
 .logo-footer {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.hero-footer {
+  background-color: var(--fhone-color);
+}
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
 }
