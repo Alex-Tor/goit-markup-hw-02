@@ -1,17 +1,31 @@
 :root {
   --header-color: #ffffff;
   --primery-text-color: #212121;
-  --picture-text-color: #212121;
   --accent-color: #2196f3;
-  --fhone-color: #757575;
+  --fhone-color: #2f303a;
+  --contact-color: rgba(255, 255, 255, 0.6);
+  --mail-tel-color: #757575;
+  --team-color: #f5f4fa;
 }
 body {
-  font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-
+.hero-footer {
+  background-color: var(--fhone-color);
+}
+.mail-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--mail-tel-color);
+}
+.mail-tel:hover,
+.mail-tel:focus {
+  color: var(--accent-color);
+}
 .menu-link {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -24,21 +38,18 @@ body {
 .menu-link:focus {
   color: var(--accent-color);
 }
-.web {
-  color: #2196f3;
+.studio-footer {
+  color: var(--header-color);
 }
 .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
-
-  color: #2196f3;
-
+  color: var(--accent-color);
   text-decoration: none;
-  color: #000000;
 }
 .list {
   list-style: none;
@@ -47,21 +58,32 @@ body {
   text-decoration: none;
 }
 .contact-menu {
-  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #000000;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--contact-color);
 }
+.contact-menu-map {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--header-color);
+}
+
 .contact-menu:hover,
 .contact-menu:focus {
   color: var(--accent-color);
 }
 .btn:focus,
 .btn:hover {
-  color: white;
+  color: var(--header-color);
 }
 .btn {
   font-family: Roboto;
@@ -69,12 +91,22 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  background: #2196f3;
+  background: var(--accent-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  border: inherit;
+  padding: inherit;
 }
 .hero-title {
+  font-style: normal;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #000000;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--header-color);
 }
 .desc-menu {
   font-family: Roboto;
@@ -101,7 +133,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primery-text-color);
 }
 .people {
   font-family: Roboto;
@@ -112,7 +144,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primery-text-color);
 }
 .people-desc {
   font-family: Roboto;
@@ -122,16 +154,32 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--mail-tel-color);
 }
 /*-- Portfolio -- */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .btn-portfolio {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  color: #212121;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primery-text-color);
+  border: inherit;
+  cursor: pointer;
+  border-radius: 4px;
 }
 .photo-portfolio {
   width: 370px;
@@ -147,7 +195,7 @@ body {
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--primery-text-color);
 }
 .desc-desc {
   font-family: Roboto;
@@ -156,5 +204,19 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--mail-tel-color);
+}
+.studio {
+  color: var(--primery-text-color);
+}
+.team {
+  background: var(--team-color);
+}
+.logo-footer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
