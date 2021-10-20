@@ -75,8 +75,8 @@ body {
 .contact-menu:focus {
   color: var(--accent-color);
 }
-.btn:focus,
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--header-color);
 }
 .btn {
@@ -85,6 +85,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--header-color);
   background: var(--accent-color);
   cursor: pointer;
   border: 0;
@@ -107,6 +108,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 }
 .desc {
   font-style: normal;
