@@ -75,24 +75,7 @@ body {
 .contact-menu:focus {
   color: var(--accent-color);
 }
-.btn:hover,
-.btn:focus {
-  color: var(--header-color);
-}
-.btn {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--header-color);
-  background: var(--accent-color);
-  cursor: pointer;
-  border: 0;
-  border-radius: 4px;
-  border: inherit;
-  padding: inherit;
-}
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -158,6 +141,25 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.btn {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primery-text-color);
+  background: var(--team-color);
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  border: inherit;
+  padding: inherit;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--header-color);
+  background: var(--accent-color);
 }
 .btn-portfolio {
   font-style: normal;
