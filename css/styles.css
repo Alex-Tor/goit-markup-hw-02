@@ -206,11 +206,15 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   cursor: pointer;
+  color: var(--accent-color);
 }
 .hero-footer {
   background-color: var(--fhone-color);
 }
 .logo-footer:hover,
 .logo-footer:focus {
+  color: var(--accent-color);
+}
+.current {
   color: var(--accent-color);
 }
